@@ -40,8 +40,7 @@ def EDA(features, targets):
     plt.title("PCA of Parkinson's Dataset")
     plt.show()
 
-#EDA(X, y)
-#for git, make one repo for eda, one for data describing, one for models
+EDA(X, y)
 X = X.to_numpy()
 y = y.to_numpy()
 y = y.ravel()
@@ -125,4 +124,5 @@ else:
     outputs = outputs.argmax(dim=1).numpy()
 
 print(f"Predicted classes: {outputs}")
+
 print(f"True labels: {y_test[idx:idx+9].numpy()}")
